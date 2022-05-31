@@ -2297,6 +2297,14 @@ class Voicemail extends \FreePBX_Helpers implements \BMO {
 						"description" => _("Language"),
 						"helptext" => _("Language code for voicemail")." [language]"
 					),
+					"speech" => array(
+						"level" => array("general"),
+						"type" => "radio",
+						"options" => array("yes" => _("Yes"), "no" => _("No")),
+						"default" => "",
+						"description" => _("Enable Speech recognition"),
+						"helptext" => _("Enagle google speech recognition if it's available.") . " [speech]"
+					),
 					"mailcmd" => array(
 						"level" => array("general"),
 						"type" => "text",
